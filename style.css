@@ -34,7 +34,7 @@ nav {
 
 .nav-links a {
     text-decoration: none; /* Removes underline from links */
-    color: #fff; /* Sets the link color to white */
+    color: #e41e9f; /* Sets the link color to white */
     transition: color 0.3s; /* Smooth transition for hover effect */
 }
 
@@ -45,4 +45,10 @@ nav {
 .name-highlight {
     color: #e41e9f; /* Highlight color for the name */
     font-weight: bold; /* Bold font for the name */
+}
+.footer {
+    background: #33354f; /* A dark background for the footer */
+    color: #fff; /* Light text color */
+    text-align: center; /* Center align the text */
+    padding: 1em 0; /* Some padding around the footer text */
 }
