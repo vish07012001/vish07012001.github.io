@@ -29,6 +29,7 @@ nav {
 .nav-links li {
     display: inline-block; /* Display links in a row */
     margin-left: 20px; /* Adds spacing between links */
+    font-weight: bold; /* Bold font for the links */
 }
 
 .nav-links a {
@@ -38,5 +39,10 @@ nav {
 }
 
 .nav-links a:hover {
-    color: #009578; /* Color when the mouse hovers over the link */
+    color: #e41e9f;; /* Color when the mouse hovers over the link */
+}
+
+.name-highlight {
+    color: #e41e9f; /* Highlight color for the name */
+    font-weight: bold; /* Bold font for the name */
 }
