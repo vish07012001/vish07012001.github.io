@@ -51,6 +51,17 @@ nav {
     color: #e41e9f;; /* Color when the mouse hovers over the link */
 }
 
+.navbar-item::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 2px;
+    bottom: -1px;
+    left: 50%;
+    background: #e41e9f var(--primary);
+    transition: 0.3s;    
+}
+
 .name-highlight {
     color: #e41e9f; /* Highlight color for the name */
     font-weight: bold; /* Bold font for the name */
