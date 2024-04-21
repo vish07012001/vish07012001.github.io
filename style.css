@@ -51,4 +51,7 @@ nav {
     color: #fff; /* Light text color */
     text-align: center; /* Center align the text */
     padding: 1em 0; /* Some padding around the footer text */
+    bottom: 0; /* Stick the footer to the bottom */
+    left: 0;
+    z-index: 100; /* Make sure the footer is on top of everything */
 }
