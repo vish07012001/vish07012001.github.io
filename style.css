@@ -2,6 +2,15 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Make sure the body takes up the full height of the screen */
+}
+
+/* Styling for the main content */
+main {
+    flex: 1; /* Make sure the main content takes up the remaining space */
+    padding: 2em; /* Some padding around the main content */
 }
 
 /* Header and navigation styling */
@@ -51,7 +60,5 @@ nav {
     color: #fff; /* Light text color */
     text-align: center; /* Center align the text */
     padding: 1em 0; /* Some padding around the footer text */
-    bottom: 0; /* Stick the footer to the bottom */
-    left: 0;
-    z-index: 100; /* Make sure the footer is on top of everything */
+    
 }
