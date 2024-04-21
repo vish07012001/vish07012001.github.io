@@ -62,3 +62,18 @@ nav {
     padding: 1em 0; /* Some padding around the footer text */
     
 }
+
+.social-media-links{
+    text-align: left;
+    padding: 10 px;
+}
+
+.social-media-links a {
+    text-decoration: none; /* Removes underline from links */
+    color: white; /* Sets the link color to white */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.social-media-links a:hover {
+    color: #e41e9f;; /* Color when the mouse hovers over the link */
+}
