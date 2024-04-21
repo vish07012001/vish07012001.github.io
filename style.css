@@ -1,0 +1,42 @@
+/* General body styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header and navigation styling */
+header {
+    background: #0b0a0a; /* A dark background for the header */
+    color: #fff; /* Light text color */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between; /* space out your logo and nav-links */
+    align-items: center;
+    padding: 1em 2em; /* some padding around the navigation items */
+}
+
+.logo h4 {
+    margin: 0; /* Removes default margin from the h4 */
+}
+
+.nav-links {
+    list-style: none; /* Removes bullet points from the list */
+    padding: 0; /* Removes default padding */
+}
+
+.nav-links li {
+    display: inline-block; /* Display links in a row */
+    margin-left: 20px; /* Adds spacing between links */
+}
+
+.nav-links a {
+    text-decoration: none; /* Removes underline from links */
+    color: #fff; /* Sets the link color to white */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.nav-links a:hover {
+    color: #009578; /* Color when the mouse hovers over the link */
+}
