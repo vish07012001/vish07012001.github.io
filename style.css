@@ -59,8 +59,11 @@ nav {
     bottom: -1px;
     left: 50%;
     background: #e41e9f var(--primary);
-    transition: 0.3s;    
+    transition: 0.3s; 
+    border: 2px solid #e41e9f;   
 }
+
+
 
 .name-highlight {
     color: #e41e9f; /* Highlight color for the name */
