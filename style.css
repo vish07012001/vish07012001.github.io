@@ -98,3 +98,22 @@ nav {
 html {
     scroll-behavior: smooth;
 }
+
+.location{
+    background: #33354f;
+    color: #fff;
+    text-align: right;
+    padding: 1em 2em; 
+}
+
+.location a{
+    text-decoration: none; /* Removes underline from links */
+    color: white; /* Sets the link color to white */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+    margin-right: 10px;
+    font-size: 25px;
+}
+
+.location a:hover {
+    color: #e41e9f;; /* Color when the mouse hovers over the link */
+}
