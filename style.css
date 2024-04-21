@@ -17,6 +17,13 @@ main {
 header {
     background: #33354f; /* A dark background for the header */
     color: #fff; /* Light text color */
+    position: fixed; /* Fix the header at the top of the page */
+    top: 0; /* Align the top edge of the header with the top of the viewport */
+    left: 0; /* Align the left edge of the header with the left of the viewport */
+    width: 100%; /* Ensure the header spans the full width of the viewport */
+    z-index: 1000; /* Ensure the header is above other content */
+    padding: -4em 0em; /* Adjust the top/bottom padding to decrease size */
+
 }
 
 nav {
@@ -24,8 +31,6 @@ nav {
     justify-content: space-between; /* space out your logo and nav-links */
     align-items: center;
     padding: 1em 2em; /* some padding around the navigation items */
-    position: fixed; /* Fixed position so it stays at the top of the screen */
-    z-index: 30;
 }
 
 .logo h4 {
@@ -41,6 +46,7 @@ nav {
     display: inline-block; /* Display links in a row */
     margin-left: 20px; /* Adds spacing between links */
     font-weight: bold; /* Bold font for the links */
+    position: relative; /* Position the underline relative to the link */
 }
 
 .nav-links a {
@@ -51,29 +57,27 @@ nav {
 
 .nav-links a:hover {
     color: #e41e9f;; /* Color when the mouse hovers over the link */
+    text-decoration: none; /* Removes underline on hover */
 }
 
-.navbar-item{
-    position: relative;
-    margin: 5px;
-}
-
-.navbar-item::before {
-    position: absolute;
-    content: "";
+/* Underline effect on hover using ::after */
+.nav-links a::after {
+    content: '';
+    display: block;
     width: 0;
-    height: 2px;
-    bottom: -1px;
-    left: 50%;
-    background: #e41e9f var(--primary);
-    transition: 0.3s; 
-    border: 2px solid #e41e9f;   
+    height: 4px; /* Thickness of the underline */
+    background: #e41e9f; /* Color of the underline */
+    transition: width 0.3s;
+    position: absolute; /* Position absolutely within the li */
+    left: 0px;
+    bottom: -32px; 
+    
 }
 
-.navbar-item:hover::before {
-  display: block;
+/* Animate the underline width on hover */
+.nav-links a:hover::after {
+    width: 100%; /* Full width of the text */
 }
-
 
 .name-highlight {
     color: #e41e9f; /* Highlight color for the name */
