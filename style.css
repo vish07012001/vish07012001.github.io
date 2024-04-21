@@ -72,25 +72,31 @@ nav {
     margin-bottom: 10px; /* Adds some space between the text and the links */
 }
 
-.social-media-links{
+.social-media-links {
+    display: flex; /* This makes it a flex container */
+    align-items: center; /* Centers items vertically */
+    justify-content: flex-start; /* Aligns items to the start horizontally */
+    flex-wrap: wrap; /* Allows items to wrap to next line if needed */
     background: #33354f;
     color: #fff;
-    text-align: left;
-    padding: 1em 2em; 
+    padding: 1em 2em;
 }
 
 .social-media-links a {
     text-decoration: none; /* Removes underline from links */
     color: white; /* Sets the link color to white */
     transition: color 0.3s; /* Smooth transition for hover effect */
-    margin-right: 10px;
     font-size: 25px;
 }
 
-.social-media-links a:last-child {
-    margin-right: 0; /* Remove margin from the last link */
-    margin-left: auto; /* Push the last link to the right */
+.social-media-links a:not(:last-child) {
+    margin-right: 10px; /* Adds spacing between the links */ 
     
+}
+
+/* Push the last link to the right */
+.social-media-links a:last-child {
+    margin-left: auto;
 }
 
 .social-media-links a:hover {
