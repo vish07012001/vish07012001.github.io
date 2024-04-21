@@ -15,7 +15,7 @@ main {
 
 /* Header and navigation styling */
 header {
-    background: #0b0a0a; /* A dark background for the header */
+    background: #33354f; /* A dark background for the header */
     color: #fff; /* Light text color */
 }
 
@@ -61,6 +61,15 @@ nav {
     text-align: center; /* Center align the text */
     padding: 1em 0; /* Some padding around the footer text */
     
+}
+
+/* Styling for the social media links */
+
+.social-media-links::before {
+    content: " "; /* Adds text before the social media links */
+    display: block; /* Displays the text on a new line */
+    border-top: white 1px solid; /* Adds a white border above the text */
+    margin-bottom: 10px; /* Adds some space between the text and the links */
 }
 
 .social-media-links{
