@@ -94,3 +94,7 @@ nav {
 .social-media-links a:hover {
     color: #e41e9f;; /* Color when the mouse hovers over the link */
 }
+
+html {
+    scroll-behavior: smooth;
+}
