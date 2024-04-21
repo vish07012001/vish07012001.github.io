@@ -43,7 +43,7 @@ nav {
 
 .nav-links a {
     text-decoration: none; /* Removes underline from links */
-    color: #e41e9f; /* Sets the link color to white */
+    color: white; /* Sets the link color to white */
     transition: color 0.3s; /* Smooth transition for hover effect */
 }
 
@@ -67,13 +67,19 @@ nav {
     background: #33354f;
     color: #fff;
     text-align: left;
-    padding: 1em 2em;
+    padding: 1em 2em; 
 }
 
 .social-media-links a {
     text-decoration: none; /* Removes underline from links */
     color: white; /* Sets the link color to white */
     transition: color 0.3s; /* Smooth transition for hover effect */
+    margin-right: 10px;
+    font-size: 25px;
+}
+
+.social-media-links a:last-child {
+    margin-right: 0; /* Remove margin from the last link */
 }
 
 .social-media-links a:hover {
