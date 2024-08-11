@@ -16,4 +16,18 @@ navBar.forEach(function (a){
         navCollapse.classList.remove("show");
     })
 })
+
+document.getElementById('contact').addEventListener('submit', function(event){
+    event.preventDefault(); // Prevent the form from submitting immediately
+
+    // Display a success message
+    var form_message = document.getElementById('form_message');
+    form_message.style.display = 'block';
+    form_message.innerText = 'Thank you for reaching out! Please try to mail me on my account listed above as the details submitted in form are not monitored';
+
+     // Delay submission to display the message
+     setTimeout(function() {
+        event.target.submit(); // Submit the form programmatically
+    }, 10000); // 10-second delay before submitting
+});
  
